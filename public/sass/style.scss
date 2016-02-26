@@ -1,0 +1,73 @@
+
+$sexyblue : #327CCB;
+$chrome: #F4F4F4;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  top: 0;
+  margin: 0;
+  background-image: url(imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menuiconwrapper{
+  margin-top: 60px;
+  margin-right: 60px;
+  top: 40px;
+  float: right;
+}
+
+.mainwrapper{
+  height: 100vh;
+  width: auto;
+//  text-align: center;
+  background-color: rgba(244, 244, 244, 0.5);
+}
+
+.welcomewrapper{
+  display: inline-block;
+  position: relative;
+  top: 170px;
+  left: 80px;
+  width:700px;
+  height:200px;
+  background-color: rgba(244, 244, 244, 0.6);
+  //margin-top: 20%;
+}
+
+.splashtext{
+  font-size: 6rem;
+}
+
+.followtext{
+  font-size: 3rem;
+  position: relative;
+  animation-name: textin;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  opacity: 0;
+}
+
+@keyframes textin{
+  0% {
+    left: 50px;
+    opacity: 0;
+  }
+  100% {
+    left: 200px;
+    opacity: 1;
+  }
+}
+
+.sectiontwowrapper{
+  height: 100vh;
+  background-color: lightblue;
+}
